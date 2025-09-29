@@ -8,6 +8,7 @@
 *1.  Membuat dokumen HTML*
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/c29a6a28-33d2-4f57-b9b2-789a0ca16a26" />
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/9d818997-0e5e-4557-a082-192bd9653453" />
+penjelasan : Pada tahap ini saya membuat file lab2_css_dasar.html sesuai instruksi modul. Di dalamnya saya menambahkan elemen header, nav, dan div id="intro". Selanjutnya saya menambahkan CSS Internal di bagian head untuk mengatur font, warna, dan posisi teks. Setelah disimpan dan dibuka di browser, hasilnya sesuai: judul utama tampil biru dan rata tengah, link navigasi muncul di atas, dan paragraf ditampilkan di bawah judul “Hello World”. Ini menunjukkan CSS Internal berhasil diterapkan pada HTML.
 
 *2. Mendeklarasikan CSS Internal*
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/4cccbc64-4dc9-4b1a-a751-cbe2ca8c72ae" />
