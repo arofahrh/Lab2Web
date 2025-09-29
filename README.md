@@ -24,7 +24,34 @@ penjelasan : Pada tahap ini saya menambahkan Inline CSS langsung pada tag p deng
 *4. Membuat CSS Eksternal & Menambahkan CSS Selector*
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/d3714aa5-48df-4d7d-8f1c-fcd4252db100" />
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/323d1c3b-d8cd-4c12-a2d4-e258cda44a41" />
-penjelasam : Pada tahap ini saya melengkapi CSS Internal dengan menambahkan pengaturan pada body, header, h1, #intro, .button, dan .btn-primary. Saya juga menambahkan Inline CSS pada tag p untuk mengatur warna teks dan perataan. Hasilnya terlihat di browser: halaman tampil lebih menarik dengan background abu muda, judul rata tengah, kotak intro dengan border melengkung, dan tombol merah “Informasi selengkapnya”. Ini menunjukkan bahwa saya berhasil menerapkan berbagai selector (Elemen, ID, Class) dan prioritas CSS (Internal dan Inline CSS).
+penjelasan : Pada tahap ini saya melengkapi CSS Internal dengan menambahkan pengaturan pada body, header, h1, #intro, .button, dan .btn-primary. Saya juga menambahkan Inline CSS pada tag p untuk mengatur warna teks dan perataan. Hasilnya terlihat di browser: halaman tampil lebih menarik dengan background abu muda, judul rata tengah, kotak intro dengan border melengkung, dan tombol merah “Informasi selengkapnya”. Ini menunjukkan bahwa saya berhasil menerapkan berbagai selector (Elemen, ID, Class) dan prioritas CSS (Internal dan Inline CSS).
+
+## 2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
+## Jawaban :
+    Pendeklarasian h1 { ... } artinya aturan CSS tersebut berlaku untuk semua elemen <h1> di seluruh halaman web tanpa kecuali. Jadi setiap ada tag <h1> di mana saja, otomatis akan mengikuti style itu.
+    Sedangkan #intro h1 { ... } artinya aturan CSS tersebut hanya berlaku untuk elemen <h1> yang berada di dalam elemen yang punya id="intro" saja. Jadi lebih spesifik: <h1> yang di luar #intro tidak terpengaruh, hanya yang ada di dalam #intro saja yang kena style.
+
+## 3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
+## Jawaban :
+Kalau ada deklarasi CSS internal, kemudian ditambahkan CSS eksternal, lalu juga ada inline CSS pada elemen yang sama, yang ditampilkan di browser adalah inline CSS.
+Kenapa? Karena inline CSS punya prioritas paling tinggi dibanding internal dan eksternal. Urutannya begini:
+- Eksternal CSS (paling rendah)c
+- Internal CSS
+- Inline CSS (paling tinggi)
+Jadi walaupun kita sudah atur warna di file eksternal atau internal, kalau di elemen HTML yang sama kita kasih atribut style="", maka style inline inilah yang akan dipakai.
+contoh : <img width="1919" height="719" alt="image" src="https://github.com/user-attachments/assets/2507ca71-d5ee-4173-adfe-fda559a9cd53" />
+
+## 4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! p id="paragraf-1" class="text-paragraf"
+## Jawaban : 
+Kalau satu elemen HTML punya ID dan Class sekaligus, lalu keduanya punya aturan CSS masing-masing, maka yang ditampilkan browser adalah aturan CSS dari ID. Kenapa? Karena selector ID lebih spesifik dan lebih tinggi prioritasnya dibanding Class. Urutan spesifisitasnya:
+- Inline CSS (paling tinggi)
+- ID Selector (#id)
+- Class Selector (.class)
+- Elemen Selector (paling rendah)
+contoh : <img width="1919" height="571" alt="image" src="https://github.com/user-attachments/assets/b78f8e0f-6ef5-43cf-963d-0f8492369f6f" />
+
+
+
 
 
 
